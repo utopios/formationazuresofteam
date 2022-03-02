@@ -1,0 +1,35 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmsize": {
+            "type" : "string",
+            "defaultValue":"Standard_E8_v4",
+            "metadata": {
+                "description":"Size of vm"
+            }
+        },
+        "location": {
+            "type" : "string",
+            "defaultValue":"westus",
+            "metadata": {
+                "description":"Location of vm resources"
+            }
+        }
+    },
+    "variables": {
+        "name": "vm-3"
+    },
+    "resources": [{
+        "type": "Microsoft.Compute/virtualMachines",
+        "name": "[variables('name')]",
+        "apiVersion": "2021-11-01",
+        "location": "[parameters('location')]",
+        "properties":{
+            "hardwareProfile": {
+                "vmSize":"[parameters('vmsize')]"
+            }
+        }
+    }],
+    "outputs": {}
+}

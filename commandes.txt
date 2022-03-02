@@ -1,0 +1,10 @@
+az login --tenant utopios.onmicrosoft.com
+--Création de la vm par azure cli
+az vm create --name vm2 --resource-group formation-softeam --image UbuntuLTS --generate-ssh-keys --admin-username azurdemo --size Standard_D2as_v5
+--Pour redimensionner une vm
+--pour récupérer les options disponibles pour le resize
+az vm list-vm-resize-options --name vm2 --resource-group formation-softeam --output table
+--le resize se fait avec
+az vm resize --name vm2 --resource-group formation-softeam --size Standard_E8_v4  
+
+az vm deallocate --name vm2 --resource-group
