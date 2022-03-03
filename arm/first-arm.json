@@ -11,7 +11,7 @@
         },
         "location": {
             "type": "string",
-            "defaultValue": "westus",
+            // "defaultValue": "westus",
             "metadata": {
                 "description": "Location of vm resources"
             }

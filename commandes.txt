@@ -16,3 +16,7 @@ az vm open-port --port 80 --resource-group formation-softeam --name vm-ihab
 -- Connexion à la machine
 ssh <admin-user>@<address_ip>
 --Installer ensuite une application qui ecoute le port 80
+
+
+--commande déploiement ARM
+az deployment group create --resource-group <group> --template-file <file_arm>
