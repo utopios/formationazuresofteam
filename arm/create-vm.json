@@ -54,8 +54,8 @@
       {
         "type": "Microsoft.Network/publicIPAddresses",
         "apiVersion": "2020-05-01",
-        "name": "[variables('publicIPAddressName')]",
-        "location": "[parameters('location')]",
+        "name": "[uri(variables('publicIPAddressName'), 'parameters.json')]",
+        "location": "[uri(parameters('location'), 'parameters.json')]",
         "properties": {
           "publicIPAllocationMethod": "Dynamic"
         },
@@ -67,8 +67,8 @@
         "comments": "Simple Network Security Group for subnet [variables('vNetSubnetName')]",
         "type": "Microsoft.Network/networkSecurityGroups",
         "apiVersion": "2020-05-01",
-        "name": "[variables('networkSecurityGroupName2')]",
-        "location": "[parameters('location')]",
+        "name": "[uri(variables('networkSecurityGroupName2'), 'parameters.json')]",
+        "location": "[uri(parameters('location'), 'parameters.json')]",
         "properties": {
           "securityRules": [
             {

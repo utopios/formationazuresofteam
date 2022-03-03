@@ -19,4 +19,4 @@ ssh <admin-user>@<address_ip>
 
 
 --commande déploiement ARM
-az deployment group create --resource-group <group> --template-file <file_arm>
+az deployment group create --resource-group <group> --template-file-uri <file_arm>
