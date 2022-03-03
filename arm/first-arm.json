@@ -3,33 +3,46 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "vmsize": {
-            "type" : "string",
-            "defaultValue":"Standard_E8_v4",
+            "type": "string",
+            "defaultValue": "Standard_D2as_v5",
             "metadata": {
-                "description":"Size of vm"
+                "description": "Size of vm"
             }
         },
         "location": {
-            "type" : "string",
-            "defaultValue":"westus",
+            "type": "string",
+            "defaultValue": "westus",
             "metadata": {
-                "description":"Location of vm resources"
+                "description": "Location of vm resources"
             }
         }
     },
     "variables": {
         "name": "vm-3"
     },
-    "resources": [{
-        "type": "Microsoft.Compute/virtualMachines",
-        "name": "[variables('name')]",
-        "apiVersion": "2021-11-01",
-        "location": "[parameters('location')]",
-        "properties":{
-            "hardwareProfile": {
-                "vmSize":"[parameters('vmsize')]"
+    "resources": [
+        {
+            "type": "Microsoft.Compute/virtualMachines",
+            "name": "[variables('name')]",
+            "apiVersion": "2021-11-01",
+            "location": "[parameters('location')]",
+            "properties": {
+                "hardwareProfile": {
+                    "vmSize": "[parameters('vmsize')]"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "Canonical",
+                        "offer": "UbuntuServer",
+                        "sku": "18_04-lts-gen2",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "createOption": "fromImage"
+                    }
+                }
             }
         }
-    }],
-    "outputs": {}
+    ]
+    
 }
