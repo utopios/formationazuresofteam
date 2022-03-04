@@ -26,3 +26,9 @@ az acr login --name <container_registry_name>
 
 --Création d'une image à partir d'un docker file
 docker build -t <name_image> .
+
+--Pour push une image sur un conteneur registry
+
+docker push <host>/<iamge>:tag
+
+docker puh <azure_container_registry_name>.azurecr.io/<image_tag>:<tag>
