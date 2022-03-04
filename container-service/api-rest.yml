@@ -1,0 +1,37 @@
+apiVersion: 2019-12-01
+name: api-rest-yml
+properties:
+  imageRegistryCredentials:
+    - server: utopios.azurecr.io
+      username: 
+      password: 
+  containers:
+  - name: container-1
+    properties:
+      image: utopios.azurecr.io/api-rest-aspnet
+      resources:
+        requests:
+          cpu: 0.5
+          memoryInGb: 0.5
+      ports:
+      - port: 80
+      - port: 443
+  - name: container-2
+    properties:
+      image: utopios.azurecr.io/server-aziz
+      resources:
+        requests:
+          cpu: 0.5
+          memoryInGb: 0.5
+      ports:
+      - port: 2000
+  osType: Linux
+  ipAddress:
+    type: Public
+    ports:
+    - protocol: tcp
+      port: 80
+    - protocol: tcp
+      port: 443  
+    - protocol: tcp
+      port: 2000      
