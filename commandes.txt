@@ -20,3 +20,9 @@ ssh <admin-user>@<address_ip>
 
 --commande déploiement ARM
 az deployment group create --resource-group <group> --template-file-uri <file_arm>
+
+--Connexion à un container registry azure
+az acr login --name <container_registry_name>
+
+--Création d'une image à partir d'un docker file
+docker build -t <name_image> .
