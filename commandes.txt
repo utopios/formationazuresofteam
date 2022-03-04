@@ -32,3 +32,8 @@ docker build -t <name_image> .
 docker push <host>/<iamge>:tag
 
 docker puh <azure_container_registry_name>.azurecr.io/<image_tag>:<tag>
+
+
+--Démarrer un container service avec azure cli
+az container create --resource-group formation-s
+ofteam --name api-rest-cli --image utopios.azurecr.io/api-rest-aspnet --ports 80 --ip-address Pubblic ...."autre paramètres"
