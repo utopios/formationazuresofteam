@@ -35,9 +35,11 @@ COPY ["producer-api/producer-api.csproj", "producer-api/"]
 RUN dotnet restore "producer-api/producer-api.csproj"
 COPY . .
 WORKDIR "/src/producer-api"
+ENV ASPNETCORE_URLS="http://localhost:2000;https://localhost:2001"
 RUN dotnet build "producer-api.csproj" -c Release -o /app/build
 
 FROM build AS publish
+ENV ASPNETCORE_URLS="http://localhost:2000;https://localhost:2001"
 RUN dotnet publish "producer-api.csproj" -c Release -o /app/publish
 
 FROM directory AS final

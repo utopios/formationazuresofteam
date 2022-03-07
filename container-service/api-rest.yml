@@ -19,6 +19,9 @@ properties:
   - name: container-producer
     properties:
       image: utopios.azurecr.io/producer-api-ihab:latest
+      environmentVariables:
+        - name: "ASPNETCORE_URLS"
+          value: "http://localhost:2000;https://localhost:2001"
       resources:
         requests:
           cpu: 0.5
