@@ -39,3 +39,11 @@ az container create --resource-group formation-softeam --name api-rest-cli --ima
 
 --Créer un conteneur de service à partir d'une ressource yml
 az container create --resource-group formation-softeam --file api-rest.yml
+
+Etapes Exercices : 
+
+1 - Création des images de nos applications.
+2 - Envoie des images sur container registry
+3 - Créer notre  azure container service à l'aide d'un fichier de déploiement.
+4 - Déployer la ressource à l'aide de azure cli.
+
