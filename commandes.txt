@@ -29,9 +29,9 @@ docker build -t <name_image> .
 
 --Pour push une image sur un conteneur registry
 
-docker push <host>/<iamge>:tag
+docker tag <host>/<image>:tag
 
-docker puh <azure_container_registry_name>.azurecr.io/<image_tag>:<tag>
+docker push <azure_container_registry_name>.azurecr.io/<image_tag>:<tag>
 
 
 --Démarrer un container service avec azure cli

@@ -1,0 +1,10 @@
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/appsettings.Development.json
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/appsettings.json
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/demo-api.dll
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/demo-api.deps.json
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/demo-api.runtimeconfig.json
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/demo-api.pdb
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/Microsoft.OpenApi.dll
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/Swashbuckle.AspNetCore.Swagger.dll
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/Swashbuckle.AspNetCore.SwaggerGen.dll
+/var/folders/8_/mq8kghjn1lv6cxdjsql35scr0000gn/T/rider-publish10546155490345795064/Swashbuckle.AspNetCore.SwaggerUI.dll

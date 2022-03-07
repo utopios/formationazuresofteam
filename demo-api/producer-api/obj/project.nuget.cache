@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JgjTlSpI5b9kshDnHe/3d6/HO71hW0i6v+0b2ZGsQQ8qM2LP3ouUbVof5W9kCALQHhsLlAtFLaS5Bj5VPPRHQQ==",
+  "success": true,
+  "projectFilePath": "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/producer-api/producer-api.csproj",
+  "expectedPackageFiles": [
+    "/Users/ihab/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
