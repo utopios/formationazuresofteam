@@ -3,12 +3,12 @@ name: api-rest-yml
 properties:
   imageRegistryCredentials:
     - server: utopios.azurecr.io
-      username: 
-      password: 
+      username: utopios
+      password: c2RxG8juO+wWNOvqFAPJDp5bhVp242k1
   containers:
-  - name: container-1
+  - name: container-client
     properties:
-      image: utopios.azurecr.io/api-rest-aspnet
+      image: utopios.azurecr.io/client-api-ihab:latest
       resources:
         requests:
           cpu: 0.5
@@ -16,9 +16,9 @@ properties:
       ports:
       - port: 80
       - port: 443
-  - name: container-2
+  - name: container-producer
     properties:
-      image: utopios.azurecr.io/server-aziz
+      image: utopios.azurecr.io/producer-api-ihab:latest
       resources:
         requests:
           cpu: 0.5
