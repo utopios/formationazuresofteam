@@ -5,6 +5,16 @@ properties:
     - server: utopios.azurecr.io
       username: utopios
       password: c2RxG8juO+wWNOvqFAPJDp5bhVp242k1
+  osType: Linux
+  ipAddress:
+    type: Public
+    ports:
+    - protocol: tcp
+      port: 80
+    - protocol: tcp
+      port: 443  
+    # - protocol: tcp
+    #   port: 2000 
   containers:
   - name: container-client
     properties:
@@ -28,13 +38,4 @@ properties:
           memoryInGb: 0.5
       ports:
       - port: 2000
-  osType: Linux
-  ipAddress:
-    type: Public
-    ports:
-    - protocol: tcp
-      port: 80
-    - protocol: tcp
-      port: 443  
-    - protocol: tcp
-      port: 2000      
+       
