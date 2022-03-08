@@ -47,3 +47,15 @@ Etapes Exercices :
 3 - Créer notre  azure container service à l'aide d'un fichier de déploiement.
 4 - Déployer la ressource à l'aide de azure cli.
 
+
+--Déploiement d'une application web app service avec le cli
+
+az webapp deployment source config-zip 
+az webapp deployment source config --repo-url http://github.com/demo-app-azure.git --branch main --resource-group formation-softeam --git-token
+
+Utilisation API KUDU avec cli azure
+az webapp deploy -g formation-softeam --name utopiosappihab --src-path demo-api.zip
+
+--Exercice 
+Tester le déploiement d'une application web sur azure app service.
+
