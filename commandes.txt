@@ -59,3 +59,17 @@ az webapp deploy -g formation-softeam --name utopiosappihab --src-path demo-api.
 --Exercice 
 Tester le déploiement d'une application web sur azure app service.
 
+
+########Persistence dans Azure App Service ##########
+
+Dans une application azure app service, il n'y a pas de persistence automatique,
+Solution 1 Persistent Share Storage :
+Utilisation d'une persistence partagée fournit par Azure.
+ /home directory ou je peux appliquer une persistence.
+
+Pour activer le "Persistent Share Storage", on peut utiliser az cli.
+az webapp config appsettings set --resource-group <nom_group> --name <nom_application> --settings WEBSITES_ENABLE_APP_SERVICE_STORAGE=true
+
+Solution 2 :
+
+Montage de volume avec Azure storage.
