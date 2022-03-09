@@ -71,5 +71,16 @@ Pour activer le "Persistent Share Storage", on peut utiliser az cli.
 az webapp config appsettings set --resource-group <nom_group> --name <nom_application> --settings WEBSITES_ENABLE_APP_SERVICE_STORAGE=true
 
 Solution 2 :
-
 Montage de volume avec Azure storage.
+1--Création d'une unité de stockage.
+2--Création d'un compte de fichiers de partages.
+3--"Clé Accès à l'api storage, et le nom du share"
+4--Montage du volume sur notre service.
+
+Commandes azure cli pour chaque étapes:
+    1 - az storage account create --resource-group <nom_du_groupe> --name <nom_du_compte> --location <region> --sku <offre_azure>
+    2 - az storage share create --name <nom_du_compte_de_partage> --account-name <nom_du_compte>
+    3 - Récupération de la clé <krVM/IOwW0SIpHKyCaLuD3QLqpiPawpW2/WIfCRsyl2XsH1T3KPvipZwNd5u0ZL48kQm0ArGsyAL+AStwOI7DQ==>.
+    4 - montage du volume dans notre ressource de déploiement
+
+

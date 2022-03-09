@@ -15,6 +15,12 @@ properties:
       port: 443  
     # - protocol: tcp
     #   port: 2000 
+  volumes:
+  - name: persistence-partage
+    azureFile:
+      sharename: test
+      storageAccountName: utopiosstorage
+      storageAccountKey: krVM/IOwW0SIpHKyCaLuD3QLqpiPawpW2/WIfCRsyl2XsH1T3KPvipZwNd5u0ZL48kQm0ArGsyAL+AStwOI7DQ==
   containers:
   - name: container-client
     properties:
@@ -26,6 +32,9 @@ properties:
       ports:
       - port: 80
       - port: 443
+      volumeMounts:
+      - mountPath: /
+        name: persistence-partage
   - name: container-producer
     properties:
       image: utopios.azurecr.io/producer-api-ihab:latest
@@ -38,4 +47,8 @@ properties:
           memoryInGb: 0.5
       ports:
       - port: 2000
+      volumeMounts:
+      - mountPath: /directory
+        name: persistence-partage
+  
        
