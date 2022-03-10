@@ -4,7 +4,7 @@ properties:
   imageRegistryCredentials:
     - server: utopios.azurecr.io
       username: utopios
-      password: c2RxG8juO+wWNOvqFAPJDp5bhVp242k1
+      password: jPZX4ax3zNV/18Tus2qRBcvz1ITNmmn7
   osType: Linux
   ipAddress:
     type: Public

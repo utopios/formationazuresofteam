@@ -84,3 +84,15 @@ Commandes azure cli pour chaque étapes:
     4 - montage du volume dans notre ressource de déploiement
 
 
+Si on souhaite que nos applications accédent aux stockages par l'api.
+    1 - une application dans le même abonnement.
+        On utilise un système de connexion à l'api basé sur les roles IAM de azure.
+        Ajouter un rôle à une application par le cli.
+            Récupération de l'id du storage par le cli.
+            az storage account show --resource-group formation-softeam --name <nom_du_storage> --query id
+            az role asignment create --assignee <id_application> --role "Storage Blob Data Contributror" --scope <id_storage>
+    2 - une application à l'exterieur de notre abonnement.
+
+
+    Exercice Azure Storage Blob
+    1- Mettre en place une api rest qui permet d'ajouter des images dans notre conteneur de blobs

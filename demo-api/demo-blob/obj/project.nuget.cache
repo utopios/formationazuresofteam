@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "AYlihOceF7t2O506omjX/wvFrg95hERWDLU/WFT/y+6EmPMWZVrqlbW3Kotu3onGPGtdGJ2vQo9vUxq371Synw==",
+  "success": true,
+  "projectFilePath": "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/demo-blob.csproj",
+  "expectedPackageFiles": [
+    "/Users/ihab/.nuget/packages/azure.core/1.22.0/azure.core.1.22.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/azure.identity/1.6.0-beta.1/azure.identity.1.6.0-beta.1.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/azure.storage.blobs/12.11.0-beta.3/azure.storage.blobs.12.11.0-beta.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/azure.storage.common/12.10.0-beta.3/azure.storage.common.12.10.0-beta.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.identity.client/4.39.0/microsoft.identity.client.4.39.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.identity.client.extensions.msal/2.19.3/microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.diagnostics.diagnosticsource/4.6.0/system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.memory.data/1.0.2/system.memory.data.1.0.2.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.security.cryptography.protecteddata/4.7.0/system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.text.encodings.web/4.7.2/system.text.encodings.web.4.7.2.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
+    "/Users/ihab/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}
