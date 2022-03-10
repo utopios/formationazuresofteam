@@ -92,6 +92,8 @@ Si on souhaite que nos applications accédent aux stockages par l'api.
             az storage account show --resource-group formation-softeam --name <nom_du_storage> --query id
             az role asignment create --assignee <id_application> --role "Storage Blob Data Contributror" --scope <id_storage>
     2 - une application à l'exterieur de notre abonnement.
+    En utilisant une chaine de connexion pour accéder à l'api de n'importe quelle application.
+    
 
 
     Exercice Azure Storage Blob
