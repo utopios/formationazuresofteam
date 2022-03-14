@@ -1,0 +1,19 @@
+[
+  {
+    "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_b63598da37d24fa489d8c/operations/6E453C619A14A049",
+    "operationId": "6E453C619A14A049",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Running",
+      "timestamp": "2022-03-14T18:06:23.1453758Z",
+      "duration": "PT10.6960282S",
+      "trackingId": "bbcc6094-f3fd-44ad-b18d-5044dcce8c08",
+      "statusCode": "Accepted",
+      "targetResource": {
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+        "resourceType": "Microsoft.Sql/servers",
+        "resourceName": "utopios"
+      }
+    }
+  }
+]

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/demo-blob.csproj": {}
+    "/Users/utopios/Desktop/formations-azure/demo-api/demo-blob/demo-blob.csproj": {}
   },
   "projects": {
-    "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/demo-blob.csproj": {
+    "/Users/utopios/Desktop/formations-azure/demo-api/demo-blob/demo-blob.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/demo-blob.csproj",
+        "projectUniqueName": "/Users/utopios/Desktop/formations-azure/demo-api/demo-blob/demo-blob.csproj",
         "projectName": "demo-blob",
-        "projectPath": "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/demo-blob.csproj",
-        "packagesPath": "/Users/ihab/.nuget/packages/",
-        "outputPath": "/Users/ihab/Desktop/formations/formationazuresofteam/demo-api/demo-blob/obj/",
+        "projectPath": "/Users/utopios/Desktop/formations-azure/demo-api/demo-blob/demo-blob.csproj",
+        "packagesPath": "/Users/utopios/.nuget/packages/",
+        "outputPath": "/Users/utopios/Desktop/formations-azure/demo-api/demo-blob/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/ihab/.nuget/NuGet/NuGet.Config"
+          "/Users/utopios/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.300/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

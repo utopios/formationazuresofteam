@@ -1,0 +1,14 @@
+1-- Création de la base de données
+    Création d'un nouveau serveur de base de données
+    Le choix du mode d'authentification (Az Directory, sql user, les deux)
+    Le choix du type de la base de données (base, standard,...)
+    Le choix du mode de sauvegarde.
+    Configuration du pare-feu.
+    Pour se connecter à notre base de données, on utilise la chaine de connexion en fonction du mode de connexion
+        Soit avec sql user, ou azure directory.
+    
+    Pour ajouter d'autre utilisateur à notre azure database (Az Directory).
+        Il faut être connecter avec un accés Az Directory
+        Ajouter l'utilisateur en utilisant FROM EXTERNAL PROVIDER
+        
+

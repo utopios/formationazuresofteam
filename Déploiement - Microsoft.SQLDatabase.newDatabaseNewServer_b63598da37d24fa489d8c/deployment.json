@@ -1,0 +1,480 @@
+{
+  "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/Microsoft.SQLDatabase.newDatabaseNewServer_b63598da37d24fa489d8c",
+  "name": "Microsoft.SQLDatabase.newDatabaseNewServer_b63598da37d24fa489d8c",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/databases/utopios-ihab",
+    "marketplaceItemId": "Microsoft.SQLDatabase"
+  },
+  "properties": {
+    "templateHash": "11828104351449829216",
+    "parameters": {
+      "administratorLogin": {
+        "type": "String",
+        "value": "ihab-admin-sql-azure"
+      },
+      "administratorLoginPassword": {
+        "type": "SecureString"
+      },
+      "administrators": {
+        "type": "Object",
+        "value": {
+          "administratorType": "activeDirectory",
+          "login": "ihab@infocom-ssii.com",
+          "sid": "7f5a4351-feb9-4bbc-b95a-929373cef885",
+          "tenantId": "5016feea-b6ad-4017-aa7b-03ae57220502",
+          "azureADOnlyAuthentication": false,
+          "principalType": "User"
+        }
+      },
+      "collation": {
+        "type": "String",
+        "value": "SQL_Latin1_General_CP1_CI_AS"
+      },
+      "databaseName": {
+        "type": "String",
+        "value": "utopios-ihab"
+      },
+      "tier": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "skuName": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "location": {
+        "type": "String",
+        "value": "eastus"
+      },
+      "maxSizeBytes": {
+        "type": "Int",
+        "value": 2147483648
+      },
+      "serverName": {
+        "type": "String",
+        "value": "utopios"
+      },
+      "sampleName": {
+        "type": "String",
+        "value": ""
+      },
+      "zoneRedundant": {
+        "type": "Bool",
+        "value": false
+      },
+      "licenseType": {
+        "type": "String",
+        "value": ""
+      },
+      "readScaleOut": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "numberOfReplicas": {
+        "type": "Int",
+        "value": 0
+      },
+      "minCapacity": {
+        "type": "String",
+        "value": ""
+      },
+      "autoPauseDelay": {
+        "type": "String",
+        "value": ""
+      },
+      "enableADS": {
+        "type": "Bool",
+        "value": false
+      },
+      "allowAzureIps": {
+        "type": "Bool",
+        "value": false
+      },
+      "databaseTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "serverTags": {
+        "type": "Object",
+        "value": {}
+      },
+      "enableVA": {
+        "type": "Bool",
+        "value": false
+      },
+      "useVAManagedIdentity": {
+        "type": "Bool",
+        "value": false
+      },
+      "enablePrivateEndpoint": {
+        "type": "Bool",
+        "value": false
+      },
+      "privateEndpointNestedTemplateId": {
+        "type": "String",
+        "value": "pe-f77ac53d-7488-4de9-b44e-6b246461c018"
+      },
+      "privateEndpointSubscriptionId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointResourceGroup": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointLocation": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointSubnetId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateLinkServiceName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateLinkServiceServiceId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetSubscriptionId": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetResourceGroup": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointVnetName": {
+        "type": "String",
+        "value": ""
+      },
+      "privateEndpointSubnetName": {
+        "type": "String",
+        "value": ""
+      },
+      "enablePrivateDnsZone": {
+        "type": "Bool",
+        "value": true
+      },
+      "privateLinkPrivateDnsZoneFQDN": {
+        "type": "String",
+        "value": "privatelink.database.windows.net"
+      },
+      "privateEndpointDnsRecordUniqueId": {
+        "type": "String",
+        "value": "f77ac53d-7488-4de9-b44e-6b246461c01b"
+      },
+      "privateEndpointTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.01894216/DeploymentTemplates/PrivateEndpoint.json"
+      },
+      "privateDnsForPrivateEndpointTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.01894216/DeploymentTemplates/PrivateDnsForPrivateEndpoint.json"
+      },
+      "privateDnsForPrivateEndpointNicTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.01894216/DeploymentTemplates/PrivateDnsForPrivateEndpointNic.json"
+      },
+      "privateDnsForPrivateEndpointIpConfigTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.01894216/DeploymentTemplates/PrivateDnsForPrivateEndpointIpConfig.json"
+      },
+      "allowClientIp": {
+        "type": "Bool",
+        "value": false
+      },
+      "clientIpRuleName": {
+        "type": "String",
+        "value": "ClientIp-2022-3-14_19-6-1"
+      },
+      "clientIpValue": {
+        "type": "String",
+        "value": "81.254.39.227"
+      },
+      "requestedBackupStorageRedundancy": {
+        "type": "String",
+        "value": "Local"
+      },
+      "maintenanceConfigurationId": {
+        "type": "String",
+        "value": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/providers/Microsoft.Maintenance/publicMaintenanceConfigurations/SQL_Default"
+      },
+      "keyId": {
+        "type": "String",
+        "value": ""
+      },
+      "identity": {
+        "type": "Object",
+        "value": {
+          "type": "None"
+        }
+      },
+      "primaryUserAssignedIdentityId": {
+        "type": "String",
+        "value": ""
+      },
+      "minimalTlsVersion": {
+        "type": "String",
+        "value": "1.2"
+      },
+      "enableSqlLedger": {
+        "type": "Bool",
+        "value": false
+      },
+      "connectionType": {
+        "type": "String",
+        "value": "Default"
+      },
+      "enableDigestStorage": {
+        "type": "String",
+        "value": "Disabled"
+      },
+      "digestStorageOption": {
+        "type": "String",
+        "value": ""
+      },
+      "digestStorageName": {
+        "type": "String",
+        "value": ""
+      },
+      "blobStorageContainerName": {
+        "type": "String",
+        "value": ""
+      },
+      "retentionDays": {
+        "type": "String",
+        "value": ""
+      },
+      "retentionPolicy": {
+        "type": "Bool",
+        "value": false
+      },
+      "digestAccountResourceGroup": {
+        "type": "String",
+        "value": ""
+      },
+      "digestRegion": {
+        "type": "String",
+        "value": ""
+      },
+      "storageAccountdigestRegion": {
+        "type": "String",
+        "value": ""
+      },
+      "isNewDigestLocation": {
+        "type": "Bool",
+        "value": false
+      },
+      "sqlLedgerTemplateLink": {
+        "type": "String",
+        "value": "https://sqlazureextension.hosting.portal.azure.net/sqlazureextension/Content/2.1.01894216/DeploymentTemplates/SqlLedger.json"
+      },
+      "servicePrincipal": {
+        "type": "Object",
+        "value": {
+          "type": "None"
+        }
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Running",
+    "timestamp": "2022-03-14T18:06:30.2409132Z",
+    "duration": "PT19.1833783S",
+    "correlationId": "be9f0e16-8bf5-4add-8852-f636610ff2f7",
+    "providers": [
+      {
+        "namespace": "Microsoft.Sql",
+        "resourceTypes": [
+          {
+            "resourceType": "servers",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "servers/databases",
+            "locations": [
+              "eastus"
+            ]
+          },
+          {
+            "resourceType": "servers/connectionPolicies",
+            "locations": [
+              "eastus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Storage/storageAccounts/sqlvae57r2ydtdhvvu",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "sqlvae57r2ydtdhvvu"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios",
+            "apiVersion": "2018-06-01-preview"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Storage/storageAccounts/sqlvae57r2ydtdhvvu/providers/Microsoft.Authorization/roleAssignments/0d6b2035-8d2b-5d13-a445-547b132751c8",
+        "resourceType": "Microsoft.Storage/storageAccounts/providers/roleAssignments",
+        "resourceName": "sqlvae57r2ydtdhvvu/Microsoft.Authorization/0d6b2035-8d2b-5d13-a445-547b132751c8"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/databases/utopios-ihab",
+        "resourceType": "Microsoft.Sql/servers/databases",
+        "resourceName": "utopios/utopios-ihab"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/firewallrules/AllowAllWindowsAzureIps",
+        "resourceType": "Microsoft.Sql/servers/firewallrules",
+        "resourceName": "utopios/AllowAllWindowsAzureIps"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/connectionPolicies/Default",
+        "resourceType": "Microsoft.Sql/servers/connectionPolicies",
+        "resourceName": "utopios/Default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/firewallrules/ClientIp-2022-3-14_19-6-1",
+        "resourceType": "Microsoft.Sql/servers/firewallrules",
+        "resourceName": "utopios/ClientIp-2022-3-14_19-6-1"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/databases/utopios-ihab",
+            "resourceType": "Microsoft.Sql/servers/databases",
+            "resourceName": "utopios/utopios-ihab"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/securityAlertPolicies/Default",
+        "resourceType": "Microsoft.Sql/servers/securityAlertPolicies",
+        "resourceName": "utopios/Default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Storage/storageAccounts/sqlvae57r2ydtdhvvu",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "sqlvae57r2ydtdhvvu"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/securityAlertPolicies/Default",
+            "resourceType": "Microsoft.Sql/servers/securityAlertPolicies",
+            "resourceName": "utopios/Default"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/vulnerabilityAssessments/Default",
+        "resourceType": "Microsoft.Sql/servers/vulnerabilityAssessments",
+        "resourceName": "utopios/Default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/databases/utopios-ihab",
+            "resourceType": "Microsoft.Sql/servers/databases",
+            "resourceName": "utopios/utopios-ihab"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/SubnetPolicies-",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "SubnetPolicies-"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/PrivateEndpoint-",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "PrivateEndpoint-"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/PrivateEndpoint-",
+            "resourceType": "Microsoft.Resources/deployments",
+            "resourceName": "PrivateEndpoint-"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/PrivateDns-pe-f77ac53d-7488-4de9-b44e-6b246461c018",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "PrivateDns-pe-f77ac53d-7488-4de9-b44e-6b246461c018"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios",
+            "resourceType": "Microsoft.Sql/servers",
+            "resourceName": "utopios"
+          },
+          {
+            "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Sql/servers/utopios/databases/utopios-ihab",
+            "resourceType": "Microsoft.Sql/servers/databases",
+            "resourceName": "utopios/utopios-ihab"
+          }
+        ],
+        "id": "/subscriptions/c49e632f-5dd4-4c37-b1a6-578c7faa36fd/resourceGroups/formation-softeam/providers/Microsoft.Resources/deployments/ledger-",
+        "resourceType": "Microsoft.Resources/deployments",
+        "resourceName": "ledger-"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}
