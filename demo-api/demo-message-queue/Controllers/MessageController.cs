@@ -18,4 +18,10 @@ public class MessageController : ControllerBase
     {
         return Ok(new { result = _messageQueueService.SendMessage(nameQueue, message)});
     }
+
+    [HttpGet("{name}")]
+    public IActionResult Get(string name)
+    {
+        return Ok(new {result = _messageQueueService.GetLastMessage(name)});
+    }
 }
