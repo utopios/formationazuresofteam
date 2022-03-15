@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "rUlL+L+0FMNM9ADaEH8y2/atyCSzJ241sEsGWqWY3xM=",
+  "Source": "demo-message-queue",
+  "BasePath": "_content/demo-message-queue",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

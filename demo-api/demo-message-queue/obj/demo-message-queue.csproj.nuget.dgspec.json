@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/utopios/Desktop/formations-azure/demo-api/demo-message-queue/demo-message-queue.csproj": {}
+  },
+  "projects": {
+    "/Users/utopios/Desktop/formations-azure/demo-api/demo-message-queue/demo-message-queue.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/utopios/Desktop/formations-azure/demo-api/demo-message-queue/demo-message-queue.csproj",
+        "projectName": "demo-message-queue",
+        "projectPath": "/Users/utopios/Desktop/formations-azure/demo-api/demo-message-queue/demo-message-queue.csproj",
+        "packagesPath": "/Users/utopios/.nuget/packages/",
+        "outputPath": "/Users/utopios/Desktop/formations-azure/demo-api/demo-message-queue/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/utopios/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.22.0, )"
+            },
+            "Azure.Storage.Common": {
+              "target": "Package",
+              "version": "[12.10.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.9.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/x64/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
