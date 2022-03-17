@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "zK8JFAPoP/uZ0wSogcIqeQQDR8B1vyp5/qnW/4CNZbo=",
+  "Source": "demo-api-asb-queue",
+  "BasePath": "_content/demo-api-asb-queue",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

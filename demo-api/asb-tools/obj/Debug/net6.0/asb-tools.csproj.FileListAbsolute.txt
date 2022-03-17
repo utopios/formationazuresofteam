@@ -1,0 +1,12 @@
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/bin/Debug/net6.0/asb-tools.deps.json
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/bin/Debug/net6.0/asb-tools.dll
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/bin/Debug/net6.0/ref/asb-tools.dll
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/bin/Debug/net6.0/asb-tools.pdb
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.csproj.AssemblyReference.cache
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.GeneratedMSBuildEditorConfig.editorconfig
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.AssemblyInfoInputs.cache
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.AssemblyInfo.cs
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.csproj.CoreCompileInputs.cache
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.dll
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/ref/asb-tools.dll
+/Users/utopios/Desktop/formations-azure/demo-api/asb-tools/obj/Debug/net6.0/asb-tools.pdb
