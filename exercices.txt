@@ -1,0 +1,1 @@
+Création d'une pipeline azure devops pour déployer une application web .net core (flask, spring boot)

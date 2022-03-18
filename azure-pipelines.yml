@@ -52,11 +52,15 @@ stages:
 
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       artifact: drop
+        
+- stage: Deploy
+  displayName: Deploy stage
+  dependsOn: Build
+  condition: succeeded()
+  jobs:
   - deployment: Deploy
     displayName: Deploy
     environment: $(environmentName)
-    dependsOn: Build
-    condition: succeeded()
     pool:
       vmImage: $(vmImageName)
     strategy:
