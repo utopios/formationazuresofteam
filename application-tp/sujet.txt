@@ -1,0 +1,12 @@
+TP - Azure
+Le but du TP est de déployer une application avec plusieurs services sur le cloud azure.
+L'application est composée de :
+    - Application vote
+    - Application result
+    - Application worker
+    - Une base de données postgresql (container)
+    - Un cache redis.
+
+-L'application peut être déployer en tant que service multi-conteneurs(on peut utiliser le docker compose fourni).
+-On peut utiliser azure devops pipeline pour générer les images et les envoyer dans un conteneurs register.
+-Nous pouvons appliquer un firewell pour protéger notre application contre les TOP 10 OWSAP.

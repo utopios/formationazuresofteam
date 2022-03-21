@@ -1,0 +1,51 @@
+version: "3.3"
+services:
+    redis:
+        image: redis:5.0-alpine3.10
+        networks:
+            - redis-network
+        volumes:
+            - "./redis-check:/redis-check"
+        healthcheck:
+            test: /redis-check/script.sh
+            interval: "5s"
+    db:
+        image: postgres:9.4
+        volumes:
+            - "data-postgres:/var/lib/postgresql/data"
+            - "./postgres-check:/postgrescheck"
+        environment:
+            POSTGRES_USER: "postgres"
+            POSTGRES_PASSWORD: "postgres"
+        networks:
+            - postgres-network
+        healthcheck:
+            test: /postgrescheck/script.sh
+            interval: "5s"
+    vote:
+        image: vote
+        ports:
+            - "4000:80"
+        depends_on:
+            - redis
+        networks:
+            - redis-network
+    result:
+        image: result
+        ports:
+            - "6001:4000"
+        depends_on:
+            - db
+        networks:
+            - postgres-network
+    worker:
+        image: worker
+        networks:
+            - redis-network
+            - postgres-network
+
+volumes:
+    data-postgres:
+networks:
+    redis-network:
+    postgres-network:
