@@ -6,9 +6,9 @@ services:
             - redis-network
         volumes:
             - "./redis-check:/redis-check"
-        healthcheck:
-            test: /redis-check/script.sh
-            interval: "5s"
+        # healthcheck:
+        #     test: /redis-check/script.sh
+        #     interval: "5s"
     db:
         image: postgres:9.4
         volumes:
@@ -19,11 +19,11 @@ services:
             POSTGRES_PASSWORD: "postgres"
         networks:
             - postgres-network
-        healthcheck:
-            test: /postgrescheck/script.sh
-            interval: "5s"
+        # healthcheck:
+        #     test: /postgrescheck/script.sh
+        #     interval: "5s"
     vote:
-        image: vote
+        image: utopios.azurecr.io/vote:latest
         ports:
             - "4000:80"
         depends_on:
@@ -31,7 +31,7 @@ services:
         networks:
             - redis-network
     result:
-        image: result
+        image: utopios.azurecr.io/result:latest
         ports:
             - "6001:4000"
         depends_on:
@@ -39,7 +39,7 @@ services:
         networks:
             - postgres-network
     worker:
-        image: worker
+        image: utopios.azurecr.io/worker:latest
         networks:
             - redis-network
             - postgres-network
