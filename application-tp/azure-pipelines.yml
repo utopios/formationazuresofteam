@@ -59,3 +59,30 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+# - stage: deploy
+#   displayName: deploy
+#   jobs:
+#   - job: deploy
+#     displayName: deploy
+#     pool:
+#       vmImage: $(vmImageName)
+#     steps:
+#     - task: DockerCompose@0
+#       inputs:
+#         containerregistrytype: 'Container Registry'
+#         dockerRegistryEndpoint: 'utopios'
+#         dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+#         action: 'Run a Docker Compose command'
+#     - task: DockerCompose@0
+#       displayName: Docker Compose
+#       inputs:
+#         azureSubscriptionEndpoint: utopios
+#         dockerComposeFile: '$(Build.SourcesDirectory)/docker-compose.yml'
+#         dockerComposeCommand: up --build --no-start
+#     - task: DockerCompose@0
+#       displayName: Push services
+#       inputs:
+#         azureSubscriptionEndpoint: utopios
+#         dockerComposeFile: docker-compose.yml
+#         action: Push services
+       
